@@ -1,0 +1,185 @@
+@import "./base.less";
+.pageWrap {
+  width: 100%;
+  height: auto;
+  .earn {
+    width: 96%;
+    .height(183);
+    margin: 0 auto;
+    .marginTop(11);
+    background-image: url("../../assets/images/earnBg@2x.png");
+      background-position: 0 0;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    color: #FFFFFF;
+    .earnTop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      .text {
+        .marginTop(36);
+        .fontSize(14);
+      }
+      .num {
+        .marginTop(24);
+        .fontSize(33);
+        text-align: center;
+        font-weight: 500;
+      }
+    }
+    .earnBottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .marginTop(20);
+      .paddingLeft(29);
+      .paddingRight(29);
+      .text {
+        .fontSize(16);
+        .big {
+          .fontSize(20);
+          font-weight: 50;
+        }
+      }
+      .toWithDraw {
+        .fontSize(13);
+        .back {
+          .width(7);
+          .height(12);
+          .marginLeft(6);
+        }
+      }
+    }
+  }
+  .friends {
+    .marginTop(29);
+    .paddingLeft(16);
+    .paddingRight(16);
+    .lineHeight(24);
+    color: #1B1B1B;
+    .title {
+      .fontSize(16);
+      .big {
+        display: inline-block;
+        .width(24);
+        .height(24);
+        .marginLeft(5);
+        text-align: center;
+        .fontSize(13);
+        color: #FE8B13;
+        background: #FFEEEB;
+        border-radius: 50%;
+      }
+    }
+    .list {
+      .marginTop(20);
+      .item {
+        .marginBottom(20);
+        .paddingLeft(15);
+        .paddingRight(15);
+        .paddingTop(13);
+        .paddingBottom(18);
+        box-shadow:0px 5px 12px 0px rgba(74,38,0,0.1);
+        .top {
+          display: flex;
+          flex-direction: row;
+          .avatar {
+            .width(44);
+            .height(44);
+            border-radius: 50%;
+            overflow: hidden;
+          }
+          .info {
+            .marginLeft(10);
+            .paddingTop(5);
+            span {
+              display: block;
+            }
+            .name {
+              .fontSize(15);
+              color: #1B1B1B;
+            }
+            .time {
+              .fontSize(11);
+              color: #898989;
+            }
+          }
+        }
+        .middle {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .progress {
+            flex: 1;
+            .height(6);
+            .marginRight(11);
+            background: #FFF7F0;
+            overflow: visible;
+            border-radius: 3px;
+            .progressBar {
+              .height(6);
+              width: 85%;
+              position: relative;
+              background: #FE8B13;
+              border-radius: 3px;
+              .percent {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                display: block;
+                .paddingLeft(6);
+                .paddingRight(6);
+                .paddingTop(2);
+                .paddingBottom(2);
+                .fontSize(13);
+                color: #FE8B13;
+                border-radius: 22px;
+                background: #fff;
+                border: 2px solid #FE8B13;
+              }
+            }
+          }
+          .num {
+            .fontSize(12);
+            color: #1B1B1B;
+            .big {
+              .fontSize(17);
+            }
+          }
+        }
+        .bottom {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          .desc {
+            flex: 1;
+            .maxWidth(180);
+            span {
+              display: block;
+            }
+            .title {
+              .fontSize(14);
+              color: #1B1B1B;
+            }
+            .text {
+              .fontSize(12);
+              color: #898989;
+            }
+          }
+          .notice {
+            .btn {
+              .width(92);
+              .height(34);
+              .fontSize(14);
+              color: #fff;
+              background: linear-gradient(135deg, #FB964A, #FC7200);
+              .borderRadius(17);
+            }
+          } 
+        }
+      }
+    }
+  }
+}

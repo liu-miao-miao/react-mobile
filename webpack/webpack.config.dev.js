@@ -18,7 +18,9 @@ const config = merge(common, {
         host: 'localhost',
         // 端口号
         port: 8000,
+        compress: true,
         historyApiFallback: true,
+        open: true,
         // 是否在浏览器蒙层展示错误信息
         overlay: true,
         inline: true,

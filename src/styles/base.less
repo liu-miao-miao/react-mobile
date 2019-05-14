@@ -1,0 +1,78 @@
+@import './reset.less';
+
+#id {
+  width: 100%;
+  height: 100%;
+}
+.fontSize(@px) {
+  font-size: unit(@px / 37.5, rem);
+}
+
+/*----- 宽度 -----*/
+.width(@px) {
+  width: unit(@px / 37.5, rem);
+}
+
+.maxWidth(@px) {
+  max-width: unit(@px / 37.5, rem);
+}
+
+/*----- 高度 -----*/
+.height(@px) {
+  height: unit(@px / 37.5, rem);
+}
+
+/*----- 行高 -----*/
+.lineHeight(@px) {
+  line-height: unit(@px / 37.5, rem);
+}
+
+.borderRadius(@px) {
+  border-radius: unit(@px / 37.5, rem);
+}
+
+/*----- 背景尺寸 -----*/
+.backgroundSize(@px, @px) {
+  -webkit-background-size: unit(@px / 37.5, rem) unit(@px / 37.5, rem);
+  background-size: unit(@px / 37.5, rem) unit(@px / 37.5, rem);
+}
+/**
+* [背景尺寸，设置宽度，高度auto]
+ */
+.b_s1(@px) {
+  -webkit-background-size: unit(@px / 37.5, rem) auto;
+  background-size: unit(@px / 37.5, rem) auto;
+}
+
+.b_s2(@px) {
+  -webkit-background-size: auto unit(@px / 37.5, rem);
+  background-size: auto unit(@px / 37.5, rem);
+}
+
+/*----- margin -----*/
+.marginTop(@px) {
+  margin-top: unit(@px / 37.5, rem);
+}
+.marginRight(@px) {
+  margin-right: unit(@px / 37.5, rem);
+}
+.marginBottom(@px) {
+  margin-bottom: unit(@px / 37.5, rem);
+}
+.marginLeft(@px) {
+  margin-left: unit(@px / 37.5, rem);
+}
+
+/*----- padding -----*/
+.paddingTop(@px) {
+  padding-top: unit(@px / 37.5, rem);
+}
+.paddingRight(@px) {
+  padding-right: unit(@px / 37.5, rem);
+}
+.paddingBottom(@px) {
+  padding-bottom: unit(@px / 37.5, rem);
+}
+.paddingLeft(@px) {
+  padding-left: unit(@px / 37.5, rem);
+}

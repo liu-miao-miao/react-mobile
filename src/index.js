@@ -5,7 +5,6 @@ import { LocaleProvider } from 'antd';
 import { HashRouter } from 'react-router-dom';
 import zh_CN from 'antd/lib/locale-provider/zh_CN';
 import 'moment/locale/zh-cn';
-
 import GlobalModel from './GlobalModel';
 import App from './App';
 
